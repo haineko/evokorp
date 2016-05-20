@@ -1,0 +1,52 @@
+.pagination {
+	margin: 15px 0;
+	font-size: 0;
+
+	&__item {
+		margin-right: 9px;
+		display: inline-block;
+		font-size: 15px;
+		color: $dark-color;
+		text-transform: lowercase;
+		text-decoration: none;
+
+		&:first-child,
+		&:last-child {
+			position: relative;
+			span {
+				border-bottom: 1px dotted #666666;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 10px;
+				width: 16px;
+				height: 7px;
+				background-image: url('../img/sprite-page.png');
+				background-repeat: no-repeat;
+			}
+		}
+
+		&:first-child {
+			padding-left: 20px;
+			&::before {
+				left: 0;
+				background-position: 0 -2px;
+			}
+		}
+
+		&:last-child {
+			padding-right: 20px;
+			margin-right: 0;
+			&::before {
+				right: 0;
+				background-position: 100% -2px;
+			}
+		}
+
+		&--active {
+			color: $main-color;
+		}
+	}
+}

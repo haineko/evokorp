@@ -1,4 +1,5 @@
 .content {
+	position: relative;
 	float: right;
 	// padding-top: 22px;
 	padding-right: 60px;
@@ -17,8 +18,9 @@
 	}
 	&__header {
 		position: relative;
-		margin-top: -6px;
+		margin-top: -2px;
 		margin-left: -26px;
+		margin-bottom: 10px;
 		// border-left: 1px dotted $main-color;
 		&::before {
 			content: '';
@@ -39,23 +41,22 @@
 	    // top: -27px;
 	    // left: -3px;
 	    display: inline;
+	    font-size: 33px;
 	    width: 500px;
 	    background-color: #fff;
 	    // z-index: 5;
 	    
 	}
 
-
-
 	p {
-		margin-bottom: 18px;
+		margin: 0;
 	}
 
 	img {
 		max-width: 100%;
 		display: block;
 	}
-
+	
 	&__back {
 		margin-top: 28px;
 		font-size: 16px;

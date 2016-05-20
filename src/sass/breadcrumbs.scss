@@ -1,0 +1,45 @@
+.breadcrumbs {
+	margin-left: 318px;
+	margin-bottom: 10px;
+	font-size: 0;
+	line-height: 1;
+	&__item {
+		position: relative;
+		padding-right: 22px;
+		display: inline-block;
+		font-size: 12.5px;
+		line-height: 1;
+
+		a {
+			
+			font-weight: 400;
+			color: $dark-color;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 1px;
+			right: 9px;
+			width: 5px;
+			height: 9px;
+			background-image: url('../img/icon-arrow.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+
+		&:last-child {
+			&::before {
+				content: '';
+				position: absolute;
+				// top: 7px;
+				// right: 9px;
+				width: 5px;
+				height: 9px;
+				@include transform (rotate(-90deg));
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.article {
+	padding-bottom: 30px;
+	border-bottom: 1px dotted #666666;
+	
+	&__title {
+		margin: 9px 0 5px !important;
+		font-size: 17px;
+		line-height: 25px;
+	}
+}

@@ -24,10 +24,80 @@ a {
 	}
 }
 
-ul {
+ul, ol {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+ol.list-number {
+	margin-left: 36px;
+	list-style: decimal;
+}
+
+ul.list {
+	margin-left: 28px;
+	li {
+		position: relative;
+		padding-left: 12px;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 9px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			display: inline-block;
+			background-color: $main-color;
+		}
+	}
+}
+
+table {
+	margin-left: 20px;
+	caption{
+		text-align: left;
+		color: $main-color;
+		font-weight: 100;
+	}
+
+	tr {
+
+		th {
+			border-spacing: 2px 15px; 
+			padding: 0 15px;
+			font-weight: 300;
+			background-image: url('../img/bg__table-header.jpg');
+			background-repeat: repeat;
+			background-position: 0 0;
+			border: 2px solid white;
+			border-bottom: 4px solid white;
+		}
+	}
+
+	tr {
+
+		td {
+			border-spacing: 2px 15px; 
+			padding: 0 15px;
+			font-weight: 300;
+			background-repeat: repeat;
+			background-position: 0 0;
+			border: 2px solid white;
+		}
+
+		&:nth-child(even) {
+			td {
+				background-image: url('../img/bg__table-even.jpg');
+			}
+		}
+		&:nth-child(odd) {
+			td {
+				background-image: url('../img/bg__table-odd.jpg');
+			}
+		}
+	}
 }
 
 input,
@@ -39,6 +109,7 @@ button {
 }
 
 .main {
+	position: relative;
 	padding-top: 40px;
 	padding-bottom: 15px;
 	min-height: 725px;
@@ -65,7 +136,7 @@ h3 {
 	margin: 0;
 	font-size: 25px;
 	font-weight: 100;
-	color: $main-color;
+	color: $dark-color;
 }
 
 input[type="email"],
@@ -123,10 +194,15 @@ input[type="submit"] {
 	}
 }
 
+.bwWrapper {
+        position: relative;
+        display: block;
+    }
+
 .mac-safari {
 	-webkit-font-smoothing:subpixel-antialiased
 }
 .mac-chrome {
 	-webkit-font-smoothing:antialiased
 }
-.win-chrome header{text-shadow:1px 0}
+.win-chrome {text-shadow:1px 0}

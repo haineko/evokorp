@@ -1,14 +1,14 @@
 .main-menu__wrapper {
     position: absolute;
-    top: 20;
-    padding-top: 20px;
+    top: 10px;
+    padding-top: 30px;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity 0.3s;
     -moz-transition: opacity 0.3s;
     transition: opacity 0.3s;
 
-    &--news {
+    &--left {
     	left: 0;
     	.submenu {
     		&::before {
@@ -20,11 +20,9 @@
 		
 	}
 
-	&--services {
+	&--right {
 		right: 0;
 		.submenu {
-			width: 300px;
-			min-height: 198px;
 			&::before {
 				right: 0;
 				border-width: 0 0 13px 10px;
@@ -37,10 +35,9 @@
 
 .submenu {
 	position: relative;
-	// opacity: 0;
 	padding: 6px 0;
-	width: 198px;
-	min-height: 245px;
+	width: 300px;
+	min-height: 198px;
 	background-color: rgba(220, 0, 25, 0.8);
 	z-index: 10;
 	box-sizing: border-box;
@@ -78,7 +75,7 @@
 
 	&__link {
 		position: relative;
-		display: inline-block;
+		display: block;
 		line-height: 16px;
 		color: $light-color;
 		text-decoration: none;

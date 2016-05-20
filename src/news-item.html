@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Эвокорп</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,11 +17,27 @@
 					</li>
 					<li class="main-menu__item">
 						<a href="" class="main-menu__link">Услуги</a>
+						<div class="main-menu__wrapper main-menu__wrapper--left">
+							<ul class="submenu">
+								<li class="submenu__item">
+									<a href="news-item.html" class="submenu__link"><span>Услуга 1</span></a>
+								</li>
+								<li class="submenu__item">
+									<a href="news-item.html" class="submenu__link"><span>Маленькая услуга 2</span></a>
+								</li>
+								<li class="submenu__item">
+									<a href="news-item.html" class="submenu__link"><span>Очень маленькая услуга 3</span></a>
+								</li>
+								<li class="submenu__item">
+									<a href="news-item.html" class="submenu__link"><span>Очень-очень маленькая услуга 4</span></a>
+								</li>
+							</ul>
+						</div>
 					</li>
 					<li class="main-menu__item">
 						<a href="news.html" class="main-menu__link">Новости</a>
-						<div class="main-menu__wrapper main-menu__wrapper--news">
-							<ul class="submenu submenu--news">
+						<div class="main-menu__wrapper main-menu__wrapper--left">
+							<ul class="submenu">
 								<li class="submenu__item">
 									<a href="news-item.html" class="submenu__link"><span>Новости о новостях</span></a>
 								</li>
@@ -39,8 +55,8 @@
 					</li>
 					<li class="main-menu__item">
 						<a href="" class="main-menu__link">Информация</a>
-						<div class="main-menu__wrapper main-menu__wrapper--services">
-							<ul class="submenu submenu--services">
+						<div class="main-menu__wrapper main-menu__wrapper--right">
+							<ul class="submenu">
 								<li class="submenu__item">
 									<a href="services.html" class="submenu__link"><span>Расчет собственных средств</span></a>
 								</li>
@@ -71,22 +87,22 @@
 		<div class="main">
 			<div class="partner">
 				<h2>Партнёры</h2>
-				<div class="partner__item">
+				<div class="partner__item" class="bwWrapper">
 					<img src="img/sberbank.jpg" alt="Сбербанк">
 				</div>
-				<div class="partner__item">
+				<div class="partner__item" class="bwWrapper">
 					<img src="img/sberbank.jpg" alt="Сбербанк">
 				</div>
-				<div class="partner__item">
+				<div class="partner__item" class="bwWrapper">
 					<img src="img/sberbank.jpg" alt="Сбербанк">
 				</div>
-				<div class="partner__item">
+				<div class="partner__item" class="bwWrapper">
 					<img src="img/sberbank.jpg" alt="Сбербанк">
 				</div>
-				<div class="partner__item">
+				<div class="partner__item" class="bwWrapper">
 					<img src="img/sberbank.jpg" alt="Сбербанк">
 				</div>
-				<div class="partner__item">
+				<div class="partner__item" class="bwWrapper">
 					<img src="img/sberbank.jpg" alt="Сбербанк">
 				</div>
 			</div>
@@ -109,13 +125,29 @@
 					<div class="news-item">
 						<span class="news__date">4 мая</span>
 						<h3>Агентство Moody´s подтвердило рейтинг Компании</h3>
-						<p>Международное рейтинговое агентство Moody´s Investors Service подтвердило долгосрочный депозитный рейтинг АО «МЕЖДУНАРОДНЫЙ ФИНАНСОВЫЙ КЛУБ» (Далее — Банк) на уровне «В3».</p>
+						<p>
+							<figure>
+								<img src="img/tramp.jpg" alt="" />
+								<figcaption>(Дональд Трамп)</figcaption>
+							</figure>
+							Международное рейтинговое агентство Moody´s Investors Service подтвердило долгосрочный депозитный рейтинг АО «МЕЖДУНАРОДНЫЙ ФИНАНСОВЫЙ КЛУБ» (Далее — Банк) на уровне «В3».По состоянию на 1 апреля 2016 года Банк МФК входит в ТОП-100 крупнейших российских банков: 71 место по размеру активов, 90 место по размеру собственного капитала, 80 место по привлеченным средствам клиентов, 51 место по выданным кредитам юрлицам, 45 место по депозитам физлиц и 66 место по совокупному кредитному портфелю («Эксперт РА»). В своем заключении рейтинговое агентство высоко оценило показатели ликвидности Банка, а также поддержку со стороны акционеров в виде докапитализации в размере 5 млрд рублей. В своем заключении рейтинговое агентство высоко оценило показатели ликвидности Банка, а также поддержку со стороны акционеров в виде докапитализации в размере 5 млрд рублей.
+						</p>
 						<p>В своем заключении рейтинговое агентство высоко оценило показатели ликвидности Банка, а также поддержку со стороны акционеров в виде докапитализации в размере 5 млрд рублей.</p>
 						<p>По состоянию на 1 апреля 2016 года Банк МФК входит в ТОП-100 крупнейших российских банков: 71 место по размеру активов, 90 место по размеру собственного капитала, 80 место по привлеченным средствам клиентов, 51 место по выданным кредитам юрлицам, 45 место по депозитам физлиц и 66 место по совокупному кредитному портфелю («Эксперт РА»).</p>
-						<img src="img/bg__index.jpg" alt="">
 						<p>Международное рейтинговое агентство Moody´s Investors Service подтвердило долгосрочный депозитный рейтинг АО «МЕЖДУНАРОДНЫЙ ФИНАНСОВЫЙ КЛУБ» (Далее — Банк) на уровне «В3».</p>
 					</div>
-					<a class="content__back" href="#">Назад</a>
+					<div class="pagination">
+						<a href="#" class="pagination__item paginaion__item--prev"><span>Предыдущая</span></a>
+						<a href="#" class="pagination__item">1</a>
+						<a href="#" class="pagination__item">2</a>
+						<a href="#" class="pagination__item pagination__item--active">3</a>
+						<a href="#" class="pagination__item">4</a>
+						<a href="#" class="pagination__item">5</a>
+						<a href="#" class="pagination__item">6</a>
+						<a href="#" class="pagination__item">7</a>
+						<a href="#" class="pagination__item">8</a>
+						<a href="#" class="pagination__item paginaion__item--next"><span>Следующая</span></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -123,7 +155,9 @@
 			<p class="main-footer__copyright">Evocorp  © 2016</p>
 		</footer>
 	</div>
-	<script src="js/vendor.js"></script>
+	<!-- <script src="js/vendor.js"></script> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
