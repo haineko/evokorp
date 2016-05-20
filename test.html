@@ -2,10 +2,14 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=9">
 	<title>Эвокорп</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+	.bwWrapper {
+  position: relative;
+  display: block;
+}</style>
 </head>
 <body>
 	<div class="wrapper">
@@ -72,10 +76,10 @@
 		<div class="main">
 			<div class="partner">
 				<h2>Партнёры</h2>
-				<div class="partner__item">
-					<img src="img/sberbank.jpg" alt="Сбербанк">
+				<div class="partner__item bwWrapper">
+					<img class="partner__img" src="img/sberbank.jpg" alt="Сбербанк">
 				</div>
-				<div class="partner__item">
+				<div class="partner__item bwWrapper">
 					<img src="img/sberbank.jpg" alt="Сбербанк">
 				</div>
 				<div class="partner__item">
@@ -153,7 +157,22 @@
 			<p class="main-footer__copyright">Evocorp  © 2016</p>
 		</footer>
 	</div>
-	<script src="js/vendor.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.BlackAndWhite.min.js"></script>
+	<script>
+		
+        $(function(){
+            $('.bwWrapper').BlackAndWhite({
+                hoverEffect:true,
+                webworkerPath: 'js/',
+                onImageReady:function(img){
+                    $(img).parent().animate({
+                        opacity:1
+                    });
+                }
+            });
+        });
+
+	</script>	
 </body>
 </html>
