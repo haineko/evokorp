@@ -46,5 +46,15 @@
 			 //    filter: none;
 			}
 		}
+
+		svg {
+    background:url('../img/sberbank.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+svg image:hover {
+    opacity: 0;
+}
 	}
 }
