@@ -1,0 +1,132 @@
+html,
+body {
+	@include font-face($roboto, 300);
+	font-size: 12px;
+	line-height: 25px;
+	color: $dark-color;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding-top: 31px;
+	width: 1024px;
+	border-left: 1px dotted $main-color;
+	border-right: 1px dotted $main-color;
+}
+
+a {
+	display: inline-block;
+	color: $main-color;
+	&:hover,
+	&:active {
+		// color: $main-color;
+		text-decoration: none;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+input,
+textarea,
+button {
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+}
+
+.main {
+	padding-top: 40px;
+	padding-bottom: 15px;
+	min-height: 725px;
+	box-sizing: border-box;
+	@include clearfix;
+}
+
+h1 {
+	margin: 0;
+	font-size: 39px;
+	font-weight: 100;
+	color: $light-color;
+	text-align: center;
+}
+
+h2 {
+	margin: 0;
+	font-size: 29px;
+	font-weight: 100;
+	color: $main-color;
+}
+
+h3 {
+	margin: 0;
+	font-size: 25px;
+	font-weight: 100;
+	color: $main-color;
+}
+
+input[type="email"],
+input[type="search"],
+textarea {
+	margin-bottom: 18px;
+	padding: 2px 8px;
+	height: 25px;
+	font-size: 12.5px;
+	color: $main-color;
+	font-weight: 300;
+	border: none;
+	background-image: url('../img/bg__input.jpg');
+	background-repeat: repeat;
+	background-position: 0 0;
+	box-sizing: border-box;
+}
+
+input[type="email"] {
+	width: 260px;
+}
+
+textarea {
+	width: 100%;
+	height: 93px;
+	resize: none;
+}
+
+input[type="search"]::-webkit-input-placeholder {color: $main-color; font-weight: 100;}
+input[type="search"]::-moz-placeholder {color: $main-color; font-weight: 100;}
+input[type="search"]:-moz-placeholder {color: $main-color; font-weight: 100;}
+input[type="search"]-ms-input-placeholder {color: $main-color; font-weight: 100;}
+
+input[type="email"]::-webkit-input-placeholder {color: $main-color; font-weight: 100;}
+input[type="email"]::-moz-placeholder {color: $main-color; font-weight: 100;}
+input[type="email"]:-moz-placeholder {color: $main-color; font-weight: 100;}
+input[type="email"]-ms-input-placeholder {color: $main-color; font-weight: 100;}
+
+textarea::-webkit-input-placeholder {color: $main-color; font-weight: 100;}
+textarea::-moz-placeholder {color: $main-color; font-weight: 100;}
+textarea:-moz-placeholder {color: $main-color; font-weight: 100;}
+textarea-ms-input-placeholder {color: $main-color; font-weight: 100;}
+
+input[type="submit"] {
+	position: relative;
+	font-weight: 400;
+	color: $main-color;
+	text-transform: uppercase;
+	border: 0;
+	border-bottom: 1px dotted $main-color;
+	background-color: #fff;
+	&:hover,
+	&:active {
+		border-bottom: none;
+	}
+}
+
+.mac-safari {
+	-webkit-font-smoothing:subpixel-antialiased
+}
+.mac-chrome {
+	-webkit-font-smoothing:antialiased
+}
+.win-chrome header{text-shadow:1px 0}
