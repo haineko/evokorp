@@ -22,6 +22,20 @@ function ready () {
 
   body.addClass(className);
   console.log("закончился");
-}
+
+  }
 
  document.addEventListener("DOMContentLoaded", ready);
+
+ $('.bwWrapper').BlackAndWhite({
+        hoverEffect: true, 
+        webworkerPath: 'js/',
+        
+        speed: { 
+            fadeIn: 200, 
+            fadeOut: 200 
+        },
+        onImageReady: function(img) {
+            console.log('load');
+        }
+  });

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html><head>
-	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
 	<title>Gianluca Guarini - black and white image jQuery plug-in</title>
 	<meta name="Description" content="This jQuery plug-in can easly convert every colored image (in an html page) into a B&amp;W greyscale image.">
 	
@@ -12,10 +12,6 @@ body {
 	color:#999;
 	font-family: 'Rosario', sans-serif;
 	width:100%;
-}
-.bwWrapper {
-    position:relative;
-    display:block;
 }
 a {
 	color:#0072ca;
@@ -40,8 +36,10 @@ li {
 }
 li.last {
 	float:left;
-	width: 300px;
 	margin: 15px 0 15px;
+}
+li a {
+	width: 100px;
 }
 </style>
 
@@ -56,33 +54,24 @@ li.last {
 	<h3>Demo</h3>
 	<ul id="wrapper">
         <li>
-        <a href=""></a>
-                <img src="img/image7.jpg" width="100%">
+        <a href="" class="bwWrapper"></a>
+                <img src="img/image7.jpg" width="100px">
             </a>
         </li>
         <li>
             <a href="http://gianlucaguarini.github.io/jQuery.BlackAndWhite/responsive.html#" class="bwWrapper">
-                <img src="img/image8.jpg" width="100%">
+                <img src="img/image8.jpg" width="100px">
             </a>
         </li>
 	</ul>
 	</small>
 	<script>
-//init
+// //init
 
 	$('.bwWrapper').BlackAndWhite({
-        hoverEffect : true, // default true
-        // set the path to BnWWorker.js for a superfast implementation
-        webworkerPath : 'js/',
-        // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
-        speed: { //this property could also be just speed: value for both fadeIn and fadeOut
-            fadeIn: 200, // 200ms for fadeIn animations
-            fadeOut: 800 // 800ms for fadeOut animations
-        },
-        onImageReady:function(img) {
-            console.log('load');
-        }
-    });
+		hoverEffect:true,
+		webworkerPath: 'src/'
+	});
 
 </script>
 s</body></html>
