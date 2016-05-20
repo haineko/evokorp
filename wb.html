@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html><head>
+	
+	<title>Gianluca Guarini - black and white image jQuery plug-in</title>
+	<meta name="Description" content="This jQuery plug-in can easly convert every colored image (in an html page) into a B&amp;W greyscale image.">
+	
+	<style type="text/css">
+body {
+	margin: 20px auto;
+	padding: 0;
+	color:#999;
+	font-family: 'Rosario', sans-serif;
+	width:100%;
+}
+.bwWrapper {
+    position:relative;
+    display:block;
+}
+a {
+	color:#0072ca;
+}
+img {
+	border:none;
+}
+iframe {
+	display:inline;
+	float: left;
+}
+#wrapper {
+	list-style:none;
+	float:left;
+	padding:0;
+	clear:both;
+}
+li {
+	float:left;
+	margin: 15px 30px 15px 0;
+	width:30%;
+}
+li.last {
+	float:left;
+	width: 300px;
+	margin: 15px 0 15px;
+}
+</style>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+
+</head>
+<body>
+	<h1>Crossbrowser Html5 Black and white jQuery plug in</h1>
+	<h2>Responsive demo</h2>
+
+	<h3>Demo</h3>
+	<ul id="wrapper">
+        <li>
+        <a href=""></a>
+                <img src="img/image7.jpg" width="100%">
+            </a>
+        </li>
+        <li>
+            <a href="http://gianlucaguarini.github.io/jQuery.BlackAndWhite/responsive.html#" class="bwWrapper">
+                <img src="img/image8.jpg" width="100%">
+            </a>
+        </li>
+	</ul>
+	</small>
+	<script>
+//init
+
+	$('.bwWrapper').BlackAndWhite({
+        hoverEffect : true, // default true
+        // set the path to BnWWorker.js for a superfast implementation
+        webworkerPath : 'js/',
+        // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+        speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+            fadeIn: 200, // 200ms for fadeIn animations
+            fadeOut: 800 // 800ms for fadeOut animations
+        },
+        onImageReady:function(img) {
+            console.log('load');
+        }
+    });
+
+</script>
+s</body></html>
