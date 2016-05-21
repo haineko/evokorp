@@ -7,6 +7,23 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/wb/jquery.min.js"></script>
     <script src="js/wb/jquery.BlackAndWhite.js"></script>
+    <style>
+		.photo {
+        position: relative;;
+        width: 155px;
+        height: 100px;
+        float: left;
+        margin: 10px;
+        border: 1px dotted #666666;
+       }
+       .photo__item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+       }
+    </style>
 </head>
 <body>
 	<div class="wrapper">
@@ -111,6 +128,11 @@
 				<div class="partner__item">
 					<img src="img/sberbank.jpg" alt="Сбербанк">
 				</div>
+				<div class="photo">
+			        <div class="photo__item bwWrapper">
+			            <img class="photo__img" src="img/sberbank.jpg" alt="Сбербанк">
+			        </div>
+			    </div>
 			</div>
 		</div>
 		<footer class="main-footer">
