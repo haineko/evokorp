@@ -376,7 +376,6 @@ body {
   border-right: 1px dotted #dc0019; }
 
 a {
-  display: inline-block;
   color: #dc0019; }
   a:hover, a:active {
     text-decoration: none; }
@@ -472,11 +471,13 @@ h3 {
   color: #666666; }
 
 input[type="email"],
+input[type="text"],
 input[type="search"],
 textarea {
   margin-bottom: 18px;
   padding: 2px 8px;
   height: 25px;
+  width: 150px;
   font-size: 12.5px;
   color: #dc0019;
   font-weight: 300;
@@ -485,6 +486,11 @@ textarea {
   background-repeat: repeat;
   background-position: 0 0;
   box-sizing: border-box; }
+  input[type="email"].error,
+  input[type="text"].error,
+  input[type="search"].error,
+  textarea.error {
+    background-image: url("../img/bg__table-header.jpg"); }
 
 input[type="email"] {
   width: 260px; }
@@ -507,6 +513,22 @@ input[type="search"]:-moz-placeholder {
   font-weight: 100; }
 
 input[type="search"]-ms-input-placeholder {
+  color: #dc0019;
+  font-weight: 100; }
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #dc0019;
+  font-weight: 100; }
+
+input[type="text"]::-moz-placeholder {
+  color: #dc0019;
+  font-weight: 100; }
+
+input[type="text"]:-moz-placeholder {
+  color: #dc0019;
+  font-weight: 100; }
+
+input[type="text"]-ms-input-placeholder {
   color: #dc0019;
   font-weight: 100; }
 
@@ -672,7 +694,7 @@ input[type="submit"] {
   .submenu::before {
     content: '';
     position: absolute;
-    top: -13px;
+    top: -12px;
     width: 0;
     height: 0;
     border-style: solid; }
@@ -708,14 +730,14 @@ input[type="submit"] {
   width: 184px;
   font-size: 0;
   text-align: right; }
-  .search input[type="search"] {
+  .search input[type="text"] {
     display: inline-block;
     width: 60px;
     font-weight: 300;
     background-image: none;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
-    .search input[type="search"]:hover, .search input[type="search"]:active, .search input[type="search"]:focus {
+    -webkit-transition: width 1s;
+    transition: width 1s; }
+    .search input[type="text"]:hover, .search input[type="text"]:active, .search input[type="text"]:focus {
       width: 120px;
       background-image: url("../img/bg__input.jpg");
       background-repeat: repeat;
@@ -799,12 +821,6 @@ input[type="submit"] {
       z-index: 2; }
       .partner__item img:last-child {
         z-index: 1; }
-    .partner__item svg {
-      background: url("../img/sberbank.jpg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%; }
-    .partner__item svg image:hover {
-      opacity: 0; }
 
 .content {
   position: relative;
