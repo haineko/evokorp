@@ -23,7 +23,7 @@ function ready () {
   body.addClass(className);
   console.log("закончился");
 
-  $('.bwWrapper').BlackAndWhite({
+  $('.partner__wrapper').BlackAndWhite({
         hoverEffect: true, 
         webworkerPath: false,
         

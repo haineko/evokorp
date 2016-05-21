@@ -23,6 +23,13 @@
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
        }
+       .partner__wrapper {
+       	position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+       }
     </style>
 </head>
 <body>
@@ -114,7 +121,9 @@
 					<img class="partner__img" width="127px" src="img/sberbank.jpg" alt="Сбербанк">
 				</div>
 				<div class="partner__item">
-					<img src="img/sberbank.jpg" alt="Сбербанк">
+					<div class="partner__wrapper">
+						<img class="partner__photo" src="img/sberbank.jpg" alt="Сбербанк">
+					</div>
 				</div>
 				<div class="partner__item">
 					<img src="img/sberbank.jpg" alt="Сбербанк">
@@ -144,19 +153,19 @@
 	<script>
     //init
 
-    $('.bwWrapper').BlackAndWhite({
-        hoverEffect: true, 
-        webworkerPath: false,
+    // $('.partner__wrapper').BlackAndWhite({
+    //     hoverEffect: true, 
+    //     webworkerPath: false,
         
-        speed: { 
-            fadeIn: 500, 
-            fadeOut: 500 
-        },
-        onImageReady: function(img) {
-            console.log('load');
+    //     speed: { 
+    //         fadeIn: 500, 
+    //         fadeOut: 500 
+    //     },
+    //     onImageReady: function(img) {
+    //         console.log('load');
 
-        }
-    });
+    //     }
+    // });
     </script>
 </body>
 </html>
