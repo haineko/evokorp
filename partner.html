@@ -154,6 +154,10 @@
         },
         onImageReady: function(img) {
             console.log('load');
+            $(img).parent().animate({
+            	console.log('animate');
+                opacity:1
+            });
         }
     });
     </script>
