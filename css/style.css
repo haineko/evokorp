@@ -812,7 +812,7 @@ input[type="submit"] {
     border-bottom: 1px dotted #666666; }
     .partner__item:last-of-type {
       border-bottom: none; }
-    .partner__wrapper img {
+    .partner__wrapper {
       position: absolute;
       top: 50%;
       left: 50%;
