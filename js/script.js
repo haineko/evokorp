@@ -1,11 +1,9 @@
 function ready () {
-  console.log("запустился");
   var isChrome = navigator.userAgent.indexOf('Chrome') > -1,
       isSafari = navigator.userAgent.indexOf("Safari") > -1,  
       isMac = (navigator.userAgent.indexOf('Mac OS') != -1),
       body = $('body'),
       className;
-      
 
   if (isChrome && isSafari) {
       isSafari=false;
@@ -21,18 +19,16 @@ function ready () {
   }
 
   body.addClass(className);
-  console.log("закончился");
 
   $('.bwWrapper').BlackAndWhite({
         hoverEffect: true, 
         webworkerPath: false,
         
         speed: { 
-            fadeIn: 200, 
-            fadeOut: 200 
+            fadeIn: 300, 
+            fadeOut: 300 
         },
         onImageReady: function(img) {
-            console.log('load');
         }
   });
 }
