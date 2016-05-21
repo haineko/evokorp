@@ -817,7 +817,9 @@ input[type="submit"] {
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); } }
+      transform: translate(-50%, -50%); } 
+      .partner__wrapper img {
+        max-width: 155px;} }
 
 .content {
   position: relative;
