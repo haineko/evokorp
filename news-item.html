@@ -18,7 +18,7 @@
 					<li class="main-menu__item">
 						<a href="" class="main-menu__link">Услуги</a>
 						<div class="main-menu__wrapper main-menu__wrapper--left">
-							<ul class="submenu">
+							<ul class="submenu submenu--news">
 								<li class="submenu__item">
 									<a href="news-item.html" class="submenu__link"><span>Услуга 1</span></a>
 								</li>
@@ -35,11 +35,11 @@
 						</div>
 					</li>
 					<li class="main-menu__item">
-						<a href="news.html" class="main-menu__link">Новости</a>
+						<a href="news.html" class="main-menu__link  main-menu__link--active">Новости</a>
 						<div class="main-menu__wrapper main-menu__wrapper--left">
-							<ul class="submenu">
+							<ul class="submenu submenu--news">
 								<li class="submenu__item">
-									<a href="news-item.html" class="submenu__link"><span>Новости о новостях</span></a>
+									<a href="news-item.html" class="submenu__link submenu__link--active"><span>Новости о новостях</span></a>
 								</li>
 								<li class="submenu__item">
 									<a href="news-item.html" class="submenu__link"><span>Новости о новостных новостях</span></a>
@@ -56,56 +56,50 @@
 					<li class="main-menu__item">
 						<a href="" class="main-menu__link">Информация</a>
 						<div class="main-menu__wrapper main-menu__wrapper--right">
-							<ul class="submenu">
+							<ul class="submenu submenu--services">
 								<li class="submenu__item">
-									<a href="services.html" class="submenu__link"><span>Расчет собственных средств</span></a>
+									<a href="services.html" class="submenu__link"><span>Расчет собственных </span></a>
 								</li>
 								<li class="submenu__item">
-									<a href="services.html" class="submenu__link"><span>Финансовые показатели компании</span></a>
+									<a href="services.html" class="submenu__link"><span>Финансовые показатели </span></a>
 								</li>
 								<li class="submenu__item">
 									<a href="services.html" class="submenu__link"><span>Лицензии</span></a>
 								</li>
 								<li class="submenu__item">
-									<a href="services.html" class="submenu__link"><span>Информация о порядке и условиях обмена электронными документами</span></a>
+									<a href="services.html" class="submenu__link"><span>Информация о порядке</span></a>
+								</li>
+								<li class="submenu__item">
+									<a href="services.html" class="submenu__link"><span>Лицензии</span></a>
+								</li>
+								<li class="submenu__item">
+									<a href="services.html" class="submenu__link"><span>Информация о порядке </span></a>
 								</li>
 							</ul>
+						</div>
 					</li>
 					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Контакты</a>
+						<a href="contact.html" class="main-menu__link">Контакты</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="search">
-				<input type="search" class="search__input" placeholder="Поиск">
+				<input type="text" class="search__input" placeholder="Поиск">
 				<button class="search__btn">Поиск</button>
+			</div>
+			<div class="language">
+				<a href="#" class="language__link language__link--active">Рус</a>
+				<a href="#" class="language__link">Eng</a>
 			</div>
 		</header>
 		<div class="head head--news">
 			<h1>News</h1>
 		</div>
 		<div class="main">
-			<div class="partner">
-				<h2>Партнёры</h2>
-				<div class="partner__item" class="bwWrapper">
-					<img src="img/sberbank.jpg" alt="Сбербанк">
-				</div>
-				<div class="partner__item" class="bwWrapper">
-					<img src="img/sberbank.jpg" alt="Сбербанк">
-				</div>
-				<div class="partner__item" class="bwWrapper">
-					<img src="img/sberbank.jpg" alt="Сбербанк">
-				</div>
-				<div class="partner__item" class="bwWrapper">
-					<img src="img/sberbank.jpg" alt="Сбербанк">
-				</div>
-				<div class="partner__item" class="bwWrapper">
-					<img src="img/sberbank.jpg" alt="Сбербанк">
-				</div>
-				<div class="partner__item" class="bwWrapper">
-					<img src="img/sberbank.jpg" alt="Сбербанк">
-				</div>
-			</div>
+			<ul class="breadcrumbs">
+				<li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+				<li class="breadcrumbs__item"><a href="#">Новости</a></li>
+			</ul>
 			<div class="content">
 				<div class="content__block">
 					<div class="content__header">
@@ -150,14 +144,45 @@
 					</div>
 				</div>
 			</div>
+			<div class="partner">
+				<h2>Партнёры</h2>
+				<div class="partner__item">
+					<div class="partner__wrapper bwWrapper">
+						<img class="partner__photo" src="img/sberbank.jpg" alt="Сбербанк">
+					</div>
+				</div>
+				<div class="partner__item">
+					<div class="partner__wrapper bwWrapper">
+						<img class="partner__photo" src="img/vtb24.png" alt="Втб24">
+					</div>
+				</div>
+				<div class="partner__item">
+					<div class="partner__wrapper bwWrapper">
+						<img class="partner__photo" src="img/openbank.png" alt="Банк Открытие">
+					</div>
+				</div>
+				<div class="partner__item">
+					<div class="partner__wrapper bwWrapper">
+						<img class="partner__photo" src="img/sberbank.jpg" alt="Сбербанк">
+					</div>
+				</div>
+				<div class="partner__item">
+					<div class="partner__wrapper bwWrapper">
+						<img class="partner__photo" src="img/vtb24.png" alt="Втб24">
+					</div>
+				</div>
+				<div class="partner__item">
+					<div class="partner__wrapper bwWrapper">
+						<img class="partner__photo" src="img/openbank.png" alt="Банк Открытие">
+					</div>
+				</div>
+			</div>
 		</div>
 		<footer class="main-footer">
 			<p class="main-footer__copyright">Evocorp  © 2016</p>
 		</footer>
 	</div>
-	<!-- <script src="js/vendor.js"></script> -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/vendor.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
