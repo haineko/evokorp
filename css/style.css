@@ -844,12 +844,10 @@ input[type="submit"] {
     .content__header::before {
       content: '';
       position: absolute;
-      top: 50%;
+      top: 8px;
       left: 0;
       width: 100%;
-      border-top: 1px dotted #dc0019;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%); }
+      border-top: 1px dotted #dc0019; }
   .content h2 {
     position: relative;
     padding-right: 5px;
